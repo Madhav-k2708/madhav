@@ -30,9 +30,9 @@ const About = ({isDarkMode}) => {
         whileInView={{scale:1, opacity:1}}
         transition={{duration:0.6}} className="w-64 sm:w-80 rounded-3xl max-w-none ">
           <Image
-            src={assets.user_image}
+            src={assets.nameLogo}
             alt=""
-            className="w-full rounded-3xl"
+            className="w-full h-96 rounded-3xl p-1 bg-purple-500"
           />
         </motion.div>
 
@@ -65,12 +65,12 @@ const About = ({isDarkMode}) => {
           <motion.h4
           initial={{y:20,opacity:0}}
           whileInView={{opacity:1, y:0}}
-          transition={{duration:0.5, delay:1.3}}
+          transition={{duration:0.3, delay:0.5}}
           className="my-6 text-gray-700 font-Ovo dark:text-white ">Tools I use</motion.h4>
           <motion.ul
           initial={{opacity:0}}
           whileInView={{opacity:1}}
-          transition={{duration:0.5, delay:1.5}}
+          transition={{duration:0.5, delay:1}}
           className="flex items-center gap-3 sm:gap-5 ">
             {toolsData.map((tools, index) => (
                 <motion.li

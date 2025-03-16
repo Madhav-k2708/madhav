@@ -67,13 +67,13 @@ const Contact = ({isDarkMode}) => {
           <motion.input
                 initial={{x: 50,opacity:0}}
                 whileInView={{x:0,opacity:1}}
-                transition={{duration:0.6, delay:1.1}}
+                transition={{duration:0.5, delay:1.1}}
           type="email" name="email"  placeholder="Enter your email" required className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90 " />
         </div>
         <motion.textarea
               initial={{y: 100,opacity:0}}
               whileInView={{y:0,opacity:1}}
-              transition={{duration:0.6, delay:1.3}}
+              transition={{duration:0.6, delay:1.1}}
         rows='6' name="message" placeholder="Enter your message" required className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90 " ></motion.textarea>
         <motion.button
         whileHover={{scale:1.05}}
