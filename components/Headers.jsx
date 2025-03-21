@@ -47,7 +47,7 @@ const Headers = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           file
-          href="/Madhav Resume.pdf"
+          href="/Madhav resume.pdf"
           download="Madhav_WebDeveloper"
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 font-Ovo bg-white dark:text-black"
         >
